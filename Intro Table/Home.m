@@ -68,7 +68,7 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+   self.lblSelection.text = self.avengerNames[indexPath.row];
 }
 
 @end
