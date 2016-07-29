@@ -27,7 +27,7 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    maIntroTitles   = [[NSMutableArray alloc] initWithObjects: @"“ESTA TEMPORADA CELEBRA VERTE Y SENTIRTE BIEN, ¡ES TIEMPO DE DEJARSE CONSENTIR!”", @"Para aquéllas que no siguen tendencias, sino que las crean y rompen… te rendimos homenaje. ¡Lideremos el camino hacia una nueva ola de matices dignos de estar en primera fila! Fucsia, violeta, esmeralda, ciruela profundo, medianoche: captaremos el carisma de las fantasías más suntuosas de la alta costura, y luego crearemos las nuestras propias.∫", nil];
+    maIntroTitles   = [[NSMutableArray alloc] initWithObjects: @"“ESTA TEMPORADA CELEBRA VERTE Y SENTIRTE BIEN, ¡ES TIEMPO DE DEJARSE CONSENTIR!”", @"Para aquéllas que no siguen tendencias, sino que las crean y rompen… te rendimos homenaje. ¡Lideremos el camino hacia una nueva ola de matices dignos de estar en primera fila! Fucsia, violeta, esmeralda, ciruela profundo, medianoche: captaremos el carisma de las fantasías más suntuosas de la alta costura, y luego crearemos las nuestras propias.", nil];
     
     maIntroImgs     = [[NSMutableArray alloc] initWithObjects: @"kabuki.jpg", @"orange.jpg", @"fashion_pack.jpg", nil];
     
