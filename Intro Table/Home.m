@@ -13,12 +13,14 @@
 @property NSMutableArray *avengerImgs;
 @property NSMutableArray *makeupDescriptions;
 
+@property NSString *sProductName;
+@property NSString *sProductImage;
+@property NSString *sProductPrice;
+
 @end
 
 @implementation Home
-/**********************************************************************************************/
-#pragma mark - Initialization methods
-/**********************************************************************************************/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initController];
@@ -29,6 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 //-------------------------------------------------------------------------------
+
 - (void)initController {
     self.avengerNames   = [[NSMutableArray alloc] initWithObjects: @"MAKEUP BAG", @"TENDERTALK LIP BALM", @"PRO LONGWEAR BLUSH", @"DUO FIBRE BLUSH BRUSH", @"STROBE CREAM", @"EYES X 9 PALETTE: TINASHE", @"FLUIDLINE", @"STUDIO FIX FLUID SPF 15", @"VIVA GLAM LIPSTICK", @"LIPSTICK", nil];
     
@@ -60,17 +63,36 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellAvengers"];
     }
     //Fill cell with info from arrays
-    cell.lblName.text       = self.avengerNames[indexPath.row];
-    cell.imgAvenger.image   = [UIImage imageNamed:self.avengerImgs[indexPath.row]];
-    cell.lblDescription.text       = self.makeupDescriptions[indexPath.row];
+    cell.lblName.text         = self.avengerNames[indexPath.row];
+    cell.imgAvenger.image     = [UIImage imageNamed:self.avengerImgs[indexPath.row]];
+    cell.lblDescription.text  = self.makeupDescriptions[indexPath.row];
     
     return cell;
 }
+
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//   self.lblSelection.text = self.avengerNames[indexPath.row];
-    Payments *vcpay = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Payments"];
-    [self presentViewController:vcpay animated:YES completion:nil];
+
+    self.sProductName = self.avengerNames[indexPath.row];
+    self.sProductPrice = self.makeupDescriptions[indexPath.row];
+    self.sProductImage = self.avengerImgs[indexPath.row];
+    
+    [self performSegueWithIdentifier:@"Payments" sender:self];
 }
+
+/**********************************************************************************************/
+#pragma mark - Navigation
+/**********************************************************************************************/
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.destinationViewController isKindOfClass:[Payments class]]) {
+        Payments *ProductInfo = [segue destinationViewController];
+        ProductInfo.avengerNames = self.sProductName;
+        ProductInfo.makeupDescriptions = self.sProductPrice;
+        ProductInfo.avengerImgs = self.sProductImage;
+    }
+}
+
 
 @end

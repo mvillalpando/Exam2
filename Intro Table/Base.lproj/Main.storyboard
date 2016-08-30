@@ -117,6 +117,7 @@
                     <connections>
                         <outlet property="lblSelection" destination="1h0-SK-J9D" id="9Ws-hL-LGc"/>
                         <outlet property="tblAvengers" destination="uh3-ee-cTf" id="4DX-gL-Rao"/>
+                        <segue destination="pWA-AA-ocs" kind="push" identifier="Payments" id="DTt-oC-zIl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZh-m8-74q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,20 +133,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G8y-Xs-nng" userLabel="btnBuy">
-                                <rect key="frame" x="116" y="269" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Comprar"/>
+                                <rect key="frame" x="56" y="413" width="208" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                <state key="normal" title="COMPRAR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="pay" destination="pWA-AA-ocs" eventType="touchUpInside" id="WKF-wz-24U"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZJf-QY-513" userLabel="imgMakeup">
+                                <rect key="frame" x="20" y="42" width="280" height="176"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZYd-4k-ZZi" userLabel="lblName">
+                                <rect key="frame" x="62" y="279" width="202" height="38"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pAd-sv-qZt" userLabel="lblPrice">
+                                <rect key="frame" x="117" y="355" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CFV-aj-PqX"/>
+                    <connections>
+                        <outlet property="imgBuy" destination="ZJf-QY-513" id="Ib3-rp-k3S"/>
+                        <outlet property="imgMakeup" destination="ZJf-QY-513" id="TpE-cB-UZM"/>
+                        <outlet property="lblBuy" destination="ZYd-4k-ZZi" id="s5v-dx-qzr"/>
+                        <outlet property="lblName" destination="ZYd-4k-ZZi" id="6CD-0a-eg5"/>
+                        <outlet property="lblPrice" destination="pAd-sv-qZt" id="bI0-nE-6Qx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCt-T8-PIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619" y="326"/>
+            <point key="canvasLocation" x="1688" y="321"/>
         </scene>
     </scenes>
 </document>

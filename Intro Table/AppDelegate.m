@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
-                                                          PayPalEnvironmentSandbox : @"YOUR_CLIENT_ID_FOR_SANDBOX"}];
+                                                          PayPalEnvironmentSandbox : @"AcTlphilOs6i22y75iarzeDffS-WcwpE6M44YAdPM7AN6KWhAp4x4gVxuQvmz38t3wckmW7d84ITspxB"}];
     return YES;
 }
 

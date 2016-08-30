@@ -8,14 +8,20 @@
 
 #import "Payments.h"
 
-
 @interface Payments ()
-
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration;
-
 @end
 
 @implementation Payments
+
+- (void)viewDidLoad {
+    self.lblName.text = self.avengerNames;
+    self.lblPrice.text = self.makeupDescriptions;
+    self.imgMakeup.image = [UIImage imageNamed:self.avengerImgs];
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -35,10 +41,6 @@
     }
     return self;
 }
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -49,7 +51,7 @@
     [super viewWillAppear:animated];
     
     // Start out working with the test environment! When you are ready, switch to PayPalEnvironmentProduction.
-    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentNoNetwork];
+    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentSandbox];
 }
 
 - (IBAction)pay {

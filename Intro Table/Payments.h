@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "PayPalMobile.h"
 
+
 @interface Payments : UIViewController<PayPalPaymentDelegate>
+
+@property NSString *avengerNames;
+@property NSString *makeupDescriptions;
+@property NSString *avengerImgs;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imgMakeup;
+@property (strong, nonatomic) IBOutlet UILabel *lblName;
+@property (strong, nonatomic) IBOutlet UILabel *lblPrice;
 
 @end
