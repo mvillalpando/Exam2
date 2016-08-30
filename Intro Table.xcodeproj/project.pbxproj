@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192AC9C43C9865740084E06D /* Pods_Intro_Table.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD53FC40E666A1EB74E9127 /* Pods_Intro_Table.framework */; };
+		682DFA581D75FA77002D4762 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 682DFA571D75FA77002D4762 /* Podfile */; };
 		684B0F3E1D4AB642007FBA92 /* bag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 684B0F271D4AB642007FBA92 /* bag.jpg */; };
 		684B0F3F1D4AB642007FBA92 /* balm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 684B0F281D4AB642007FBA92 /* balm.jpg */; };
 		684B0F401D4AB642007FBA92 /* bluenectar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 684B0F291D4AB642007FBA92 /* bluenectar.jpg */; };
@@ -55,6 +57,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A73D1E50FA67C1B28AC4519 /* Pods-Intro Table.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intro Table.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Intro Table/Pods-Intro Table.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD53FC40E666A1EB74E9127 /* Pods_Intro_Table.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intro_Table.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		682DFA571D75FA77002D4762 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		684B0F271D4AB642007FBA92 /* bag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bag.jpg; sourceTree = "<group>"; };
 		684B0F281D4AB642007FBA92 /* balm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balm.jpg; sourceTree = "<group>"; };
 		684B0F291D4AB642007FBA92 /* bluenectar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluenectar.jpg; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		689088861D4A6BD800BBC3AB /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
 		68E6EC491D74C9E0005BEA2D /* Payments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payments.h; sourceTree = "<group>"; };
 		68E6EC4A1D74C9E0005BEA2D /* Payments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payments.m; sourceTree = "<group>"; };
+		94F7DC531C6E5E421BE3BE95 /* Pods-Intro Table.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intro Table.release.xcconfig"; path = "Pods/Target Support Files/Pods-Intro Table/Pods-Intro Table.release.xcconfig"; sourceTree = "<group>"; };
 		D126E94E1D14BBDF00DC7BB4 /* Intro Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intro Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126E9521D14BBDF00DC7BB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D126E9541D14BBDF00DC7BB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,17 +122,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192AC9C43C9865740084E06D /* Pods_Intro_Table.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		313A13F3672778EF612B9CE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FD53FC40E666A1EB74E9127 /* Pods_Intro_Table.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46C7352543A492A9A7849B2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A73D1E50FA67C1B28AC4519 /* Pods-Intro Table.debug.xcconfig */,
+				94F7DC531C6E5E421BE3BE95 /* Pods-Intro Table.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D126E9451D14BBDF00DC7BB4 = {
 			isa = PBXGroup;
 			children = (
 				D126E9501D14BBDF00DC7BB4 /* Intro Table */,
 				D126E94F1D14BBDF00DC7BB4 /* Products */,
+				46C7352543A492A9A7849B2C /* Pods */,
+				313A13F3672778EF612B9CE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +177,7 @@
 				D126E9651D14BBDF00DC7BB4 /* Info.plist */,
 				D126E95D1D14BBDF00DC7BB4 /* Intro_Table.xcdatamodeld */,
 				D126E9511D14BBDF00DC7BB4 /* Supporting Files */,
+				682DFA571D75FA77002D4762 /* Podfile */,
 			);
 			path = "Intro Table";
 			sourceTree = "<group>";
@@ -245,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D126E9681D14BBDF00DC7BB4 /* Build configuration list for PBXNativeTarget "Intro Table" */;
 			buildPhases = (
+				28AC23EBB49C37AB1371D7C3 /* [CP] Check Pods Manifest.lock */,
 				D126E94A1D14BBDF00DC7BB4 /* Sources */,
 				D126E94B1D14BBDF00DC7BB4 /* Frameworks */,
 				D126E94C1D14BBDF00DC7BB4 /* Resources */,
+				ED84591C16406E7738037CB5 /* [CP] Embed Pods Frameworks */,
+				4A3838EB86435A6B2875ECB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +340,7 @@
 				D126E9821D14D76000DC7BB4 /* cellAvengers.xib in Resources */,
 				D126E9611D14BBDF00DC7BB4 /* Assets.xcassets in Resources */,
 				684B0F4A1D4AB642007FBA92 /* heroine.jpg in Resources */,
+				682DFA581D75FA77002D4762 /* Podfile in Resources */,
 				684B0F531D4AB642007FBA92 /* remover.jpg in Resources */,
 				689088881D4A6BD800BBC3AB /* captain.jpg in Resources */,
 				684B0F4C1D4AB642007FBA92 /* lipgloss.jpg in Resources */,
@@ -335,6 +366,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28AC23EBB49C37AB1371D7C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3838EB86435A6B2875ECB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Intro Table/Pods-Intro Table-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED84591C16406E7738037CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Intro Table/Pods-Intro Table-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D126E94A1D14BBDF00DC7BB4 /* Sources */ = {
@@ -459,6 +538,7 @@
 		};
 		D126E9691D14BBDF00DC7BB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A73D1E50FA67C1B28AC4519 /* Pods-Intro Table.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Intro Table/Info.plist";
@@ -470,6 +550,7 @@
 		};
 		D126E96A1D14BBDF00DC7BB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F7DC531C6E5E421BE3BE95 /* Pods-Intro Table.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Intro Table/Info.plist";

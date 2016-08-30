@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cellAvengers.h"
+#import "Payments.h"
 
 @interface Home : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tblAvengers;

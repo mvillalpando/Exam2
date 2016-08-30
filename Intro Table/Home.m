@@ -69,6 +69,8 @@
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //   self.lblSelection.text = self.avengerNames[indexPath.row];
+    Payments *vcpay = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Payments"];
+    [self presentViewController:vcpay animated:YES completion:nil];
 }
 
 @end
