@@ -51,7 +51,7 @@
     [super viewWillAppear:animated];
     
     // Start out working with the test environment! When you are ready, switch to PayPalEnvironmentProduction.
-    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentSandbox];
+    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentNoNetwork];
 }
 
 - (IBAction)pay {
