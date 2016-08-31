@@ -12,6 +12,10 @@ extern NSString         *stDummy;
 extern NSMutableArray   *maIntroTitles;
 extern NSMutableArray   *maIntroImgs;
 
+extern NSString *sProductName;
+extern NSString *sProductImage;
+extern NSString *sProductPrice;
+
 @interface Declarations : NSObject
 
 @end

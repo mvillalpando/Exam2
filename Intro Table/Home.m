@@ -13,10 +13,6 @@
 @property NSMutableArray *avengerImgs;
 @property NSMutableArray *makeupDescriptions;
 
-@property NSString *sProductName;
-@property NSString *sProductImage;
-@property NSString *sProductPrice;
-
 @end
 
 @implementation Home
@@ -73,26 +69,30 @@
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    self.sProductName = self.avengerNames[indexPath.row];
-    self.sProductPrice = self.makeupDescriptions[indexPath.row];
-    self.sProductImage = self.avengerImgs[indexPath.row];
+    sProductName = self.avengerNames[indexPath.row];
+    sProductPrice = self.makeupDescriptions[indexPath.row];
+    sProductImage = self.avengerImgs[indexPath.row];
     
-    [self performSegueWithIdentifier:@"Payments" sender:self];
+    Payments *vcp = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Payments"];
+    [self presentViewController:vcp animated:YES completion:nil];
+
+    
+//    [self performSegueWithIdentifier:@"Payments" sender:self];
 }
 
-/**********************************************************************************************/
-#pragma mark - Navigation
-/**********************************************************************************************/
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([segue.destinationViewController isKindOfClass:[Payments class]]) {
-        Payments *ProductInfo = [segue destinationViewController];
-        ProductInfo.avengerNames = self.sProductName;
-        ProductInfo.makeupDescriptions = self.sProductPrice;
-        ProductInfo.avengerImgs = self.sProductImage;
-    }
-}
+///**********************************************************************************************/
+//#pragma mark - Navigation
+///**********************************************************************************************/
+//
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    if ([segue.destinationViewController isKindOfClass:[Payments class]]) {
+//        Payments *ProductInfo = [segue destinationViewController];
+//        ProductInfo.avengerNames = self.sProductName;
+//        ProductInfo.makeupDescriptions = self.sProductPrice;
+//        ProductInfo.avengerImgs = self.sProductImage;
+//    }
+//}
 
 
 @end

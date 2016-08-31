@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cellAvengers.h"
+#import "Declarations.h"
 #import "Payments.h"
 
 @interface Home : UIViewController

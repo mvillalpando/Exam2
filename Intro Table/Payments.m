@@ -15,9 +15,9 @@
 @implementation Payments
 
 - (void)viewDidLoad {
-    self.lblName.text = self.avengerNames;
-    self.lblPrice.text = self.makeupDescriptions;
-    self.imgMakeup.image = [UIImage imageNamed:self.avengerImgs];
+    self.lblName.text = sProductName;
+    self.lblPrice.text = sProductPrice;
+    self.imgMakeup.image = [UIImage imageNamed:sProductImage];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -60,9 +60,9 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     
     // Amount, currency, and description
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"120.00"];
+    payment.amount = [[NSDecimalNumber alloc] initWithString:self.lblPrice.text];
     payment.currencyCode = @"MXN";
-    payment.shortDescription = @"Camisa blanca";
+    payment.shortDescription = self.lblName.text;
     
     // Use the intent property to indicate that this is a "sale" payment,
     // meaning combined Authorization + Capture.

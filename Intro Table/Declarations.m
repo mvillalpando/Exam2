@@ -13,6 +13,10 @@ NSString *stDummy;
 NSMutableArray  *maIntroTitles;
 NSMutableArray  *maIntroImgs;
 
+NSString *sProductName;
+NSString *sProductImage;
+NSString *sProductPrice;
+
 @implementation Declarations
 
 

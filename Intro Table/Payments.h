@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PayPalMobile.h"
+#import "Declarations.h"
 
 
 @interface Payments : UIViewController<PayPalPaymentDelegate>
