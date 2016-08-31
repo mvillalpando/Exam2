@@ -33,7 +33,7 @@
     
     self.avengerImgs   = [[NSMutableArray alloc] initWithObjects: @"bag.jpg", @"balm.jpg", @"blush.jpg", @"brush.jpg", @"cream.jpg", @"eyeshadow.jpg", @"fluidline.jpg", @"fond.jpg", @"glam.jpg", @"heroine.jpg", nil];
     
-    self.makeupDescriptions = [[NSMutableArray alloc] initWithObjects: @"$567.00", @"$350.00", @"$375.00", @"$240.00", @"$540.00", @"$589.00", @"$295.00", @"$499.00", @"$310.00", @"$285.00", nil];
+    self.makeupDescriptions = [[NSMutableArray alloc] initWithObjects: @"567.00", @"350.00", @"375.00", @"240.00", @"540.00", @"589.00", @"295.00", @"499.00", @"310.00", @"285.00", nil];
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
